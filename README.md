@@ -6,7 +6,7 @@ For this problem set, you will download this directory, modify the `ps7.py` prog
 
 As in Problem Set 6, I have given you starter code, and you will just have to write a few functions, as described below.
 
-**Valid code:** As of ps5, I  expect you to submit code that runs to completion without errors. **Programs that produce errors when we run them will receive a grade of 0.** If you cannot get your code to run without errors, you should either post to Slack the exact error and a screenshot of the snippet of code causing the error, or come to office hours so that we can help you fix it. If it's too late to get help (e.g., 11pm on the day it's due), comment out code until your program runs without errors, and indicate in the comments where and why you commented out that code. Programs with partial code will receive partial credit.
+**Valid code:** As of ps5, I  expect you to submit code that runs to completion. **Programs that produce errors (i.e., red text in the IDLE window containing somewhere the word `Error`, or warning messages associated with a pink cursor in your code window) when we run them will receive a grade of 0.** If you cannot get your code to run without errors, you should either post to Slack the exact error and a screenshot of the snippet of code causing the error, or come to office hours so that we can help you fix it. If it's too late to get help (e.g., late in the day it's due), comment out code until your program runs without errors, and indicate in the comments where and why you commented out that code. Programs with partial code will receive partial credit.
 
 **Comments:** Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to the requirements outlined in PS5.
 
@@ -166,4 +166,4 @@ For this problem set, you downloaded this directory from GitHub, and you modifie
 
 **Don't forget your comments!**
 
-### This problem set is due Tuesday, March 30, 2021, at 11:59pm EST
+### This problem set is due Monday, October 31, 2022 at 11:59pm EDT
