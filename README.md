@@ -1,18 +1,22 @@
 # Problem Set 7
 
-### Due Tuesday, March 30, 2021, at 11:59pm EST
+###  Due Monday, October 31, 2022, at 11:59pm EDT
 
 For this problem set, you will download this directory, modify the `ps7.py` program, then zip the folder back up and submit it to Canvas. Note that if you do not submit as specified, there will be a  deduction in your grade for this assignment.
 
 As in Problem Set 6, I have given you starter code, and you will just have to write a few functions, as described below.
 
-**Comments:** Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to the requirements previously outlined.
+**Valid code:** As of ps5, I  expect you to submit code that runs to completion without errors. **Programs that produce errors when we run them will receive a grade of 0.** If you cannot get your code to run without errors, you should either post to Slack the exact error and a screenshot of the snippet of code causing the error, or come to office hours so that we can help you fix it. If it's too late to get help (e.g., 11pm on the day it's due), comment out code until your program runs without errors, and indicate in the comments where and why you commented out that code. Programs with partial code will receive partial credit.
+
+**Comments:** Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to the requirements outlined in PS5.
+
+**Folders:** Make sure your programs and your files are all in the same folder. Do not keep any folders for this class in Downloads, as this may prevent you from reading from and writing to files, which is necessary for this problem set.
 
 **Honor pledge**: And, as always, in every program, the first four lines (comments) should be your honor pledge.
 
 ---
 ## Step 1: Install the libraries
-You are going to do something you have not done before for this class: install new Python libraries! I will ask you to try this *in class on Thursday* in case you run into problems. I will be available to assist you during office hours. It is crucial that you do this before you start the rest of the program. Here's how it should work.
+You are going to do something you have not done before for this class: install new Python libraries! I will ask you to try this *in class on Thursday* in case you run into problems. I will be available to assist you during office hours. It is crucial that you do this before you try to write any code. Here's how it should work.
 
 ### Mac
 
@@ -33,17 +37,17 @@ pip3 install PySimpleGUI
 import PySimpleGUI
 ```
 
-5. If you get no ouput at all, you are good to go! If you get `ModuleNotFoundError: No module named PySimpleGUI` or something along those lines with the word "error", check to make sure that you didn't type something incorrectly. You can even just copy and paste what I have above to be sure. If you still get an error, try typing this in the Terminal:
+5. If you get no ouput at all, you are good to go! If you get `ModuleNotFoundError: No module named PySimpleGUI` or something along those lines with the word "error", check to make sure that you didn't type something incorrectly. You can  just copy and paste what I have above to be sure. If you still get an error, try copying and pasting this into the Terminal:
 
 ```
-/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 install PySimpleGUI
+/Library/Frameworks/Python.framework/Versions/3.10/bin/pip3 install PySimpleGUI
 ```
 
-7. And if that still fails, email me, come to office hours, or post on Slack.
+7. And if that still fails, come to office hours.
 
 ### Windows
 
-1. On a Windows 10 machine, go to the `Start` menu and look for `Command` or search on your computer for `Command`, and launch it.
+1. On a Windows 10 or 11 machine, go to the `Start` menu and look for `Command` or search on your computer for `Command`, and launch it.
 
 2. A boring plain text window will open. At the prompt, type:
 
@@ -51,7 +55,7 @@ import PySimpleGUI
 pip install PySimpleGUI
 ```
 
-3. This probably won't work, so you can also try one of these commands:
+3. If this doesn't work, try one of these commands:
 
 ```
 pip3 install PySimpleGUI
@@ -63,7 +67,7 @@ or
 py -3 -m pip install PySimpleGUI
 ```
 
-4. Those might not work either. If you get anything that says `ERROR` or `Command not found` or similar, the problem is probably that you did not follow instructions to tick the box about adding Python to your PATH when you installed it back in January. [Follow these instructions to either reinstall Python or to manually add Python your PATH](https://datatofish.com/add-python-to-windows-path/)
+4. Those might not work either. If you get anything that says `ERROR` or `Command not found` or similar, the problem is probably that you did not follow instructions to tick the box about adding Python to your PATH when you installed it at the beginning of the semester. [Follow these instructions to either reinstall Python or to manually add Python your PATH](https://datatofish.com/add-python-to-windows-path/)
 
 5. Quit  `Command` and reopen it, and try typing one of the three commands above.
 
@@ -75,19 +79,19 @@ py -3 -m pip install PySimpleGUI
 import PySimpleGUI
 ```
 
-8. If you get no ouput at all, you are good to go! If you get `ModuleNotFoundError: No module named PySimpleGUI` or something along those lines with the word "error", check to make sure that you didn't type something incorrectly. You can even just copy and paste what I have above to be sure. If you still get an error, see me (if you're in class or can come to office hours) or post on Slack.
+8. If you get no ouput at all, you are good to go! If you get `ModuleNotFoundError: No module named PySimpleGUI` or something along those lines with the word "error", check to make sure that you didn't type something incorrectly. You can even just copy and paste what I have above to be sure. If you still get an error, see me in person. (I can't help fix this remotely since I don't have a Windows machine.)
 
 
 
 ## Step 2: Get the files
-**Download this folder to your computer and unzip it!** All the work you will do will take place in the downloaded version of this folder. When you're done, you will zip back up the folder you downloaded and submit it on Canvas. As a reminder, to download a folder from GitHub, click on the green `Code` button, then select `Download Zip`. And then of course, unzip it to see what's inside.
+**Download this folder to your computer, and unzip it! Don't leave the folder in Downloads.** All the work you will do will take place in the downloaded version of this folder. When you're done, you will zip back up the folder you downloaded and submit it on Canvas. As a reminder, to download a folder from GitHub, click on the green `Code` button, then select `Download Zip`. And then of course, unzip it to see what's inside.
 
 <img src="img/github-download.png" width=500>
 
 
 
 ## Step 3: Run the starter program
-1. In IDLE, open the file in the directory you just downloaded called `ps7.py`. (Don't open the other `.py` file!)
+1. In IDLE, open the file in the directory you just downloaded called `ps7.py`. **Don't open the other `.py` file!**
 2. Run the program. 
 3. You should see a very primitive-looking graphical user iterface (GUI), like this. (There is a lot of code in the `ps7.py` file that manages how this GUI works, together with the various modules that are imported. You won't be modifying that code.) Where indicated in the picture below, click `Browse`, and then select one of the `ppm` image files in this directory. 
 
@@ -107,7 +111,7 @@ import PySimpleGUI
 
 ---
 
-## How does this work? [Click here to read a description](pixel.md). Then look at the code in `ps7.py` for the two functions I have written for you. You will also see that there are four functions that haven't been written yet. Your job is to write the first them! After you look at the code of `ps7.py`, come back to this page to find out your assignment.
+## How does this work? [Click here to read a description](pixel.md). Then look at the code in `ps7.py` for the two functions I have written for you. You will also see that there are four functions that haven't been written yet. Your job is to write them! After you look at the code of `ps7.py`, come back to this page to find out your assignment.
 
 ---
 
@@ -117,7 +121,7 @@ To make an image greyscale, you simply take the average of all three RGB values 
 <img src="img/greyscaletiger.png" width=300>
 
 ## Step 5: Write the `monochrome()` function
-To make an image monochrome, take each pixel and sum all three components. If the sum exceeds some threshold, set all three components of the pixel to white (i.e., `[255, 255, 255]`). Otherwise, set all three components of the pixel to black (i.e. `[0,0,0]`). Use the `colorswitch()` function as a guide. Don't forget to add your new button to the dictionary `effects`. Here's what my monochrome tiger looks like. You should try several thresholds and pick the one that looks the best.
+To make an image monochrome, take each pixel and sum all three components. If the sum exceeds some threshold, set all three components of the pixel to white (i.e., `[255, 255, 255]`). Otherwise, set all three components of the pixel to black (i.e. `[0,0,0]`). Use the `colorswitch()` function as a guide. Don't forget to add your new button to the dictionary `effects`. Here's what my monochrome tiger looks like. **You should try several thresholds and pick the one that looks the best to you.**
 
 <img src="img/monochrometiger.png" width=300>
 
@@ -147,8 +151,8 @@ The upsidedown image would be this:
 Don't forget to add your new button to the dictionary `effects`.
 
 
-## Step 7 (Optional!): Write a `pixelate()` function.
-This is an optional exercise for people who want to have more "fun". To pixellate an image, divide the image into small square, e.g., 5 pixels by 5 pixels. Within each 5x5 square, set every R component to the average of all the R components in that square; set every G component to the average of all the G components in the square; set every B component to the average of all the B components in thst square.
+## Step 7 Write a `pixelate()` function.
+To pixellate an image, divide the image into small squares, e.g., 5 pixels by 5 pixels. Within each 5x5 square, set every R component to the average of all the R components in that square; set every G component to the average of all the G components in the square; set every B component to the average of all the B components in that square.
 
 ---
 ## Trying other images
