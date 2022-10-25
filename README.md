@@ -6,11 +6,11 @@ For this problem set, you will download this directory, modify the `ps7.py` prog
 
 As in Problem Set 6, I have given you starter code, and you will just have to write a few functions, as described below.
 
-**Valid code:** As of ps5, I  expect you to submit code that runs to completion with no errors (i.e., red text in the IDLE window containing the word `Error`, or warning messages associated with a pink cursor in your code window). **Programs that produce errors  when we run them will receive a grade of 0.** If you cannot get your code to run without errors, you should either post to Slack the exact error and a screenshot of the snippet of code causing the error, or come to office hours so that we can help you fix it. If it's too late to get help (e.g., late in the day it's due), comment out code until your program runs without errors, and indicate in the comments where and why you commented out that code. Programs with partial code will receive partial credit.
+**Valid code:** As of Problem Set 5, I  expect you to submit code that runs to completion with no errors. (By "error", I mean either red text in the IDLE window containing the word `Error`, or warning messages associated with a pink cursor in your code window that prevent you from running your program at all.) **Programs or functions that produce errors when we run them will receive a grade of 0.** If you cannot get your code to run without errors, you should either post to Slack the exact error and a screenshot of the snippet of code causing the error, or come to office hours so that we can help you fix it. If it's too late to get help (e.g., late in the day it's due), comment out code until your program runs without errors, and indicate in the comments where and why you commented out that code. Programs with partial code will receive partial credit.
 
 **Comments:** Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to the requirements outlined in PS5.
 
-**Folders:** Make sure your programs and your files are all in the same folder. Do not keep any folders for this class in Downloads, as this may prevent you from reading from and writing to files, which is necessary for this problem set.
+**Folders:** Make sure your programs and your files are all in the same folder. Do not keep any folders for this class in Downloads, as this may prevent you from reading from and writing to files, which is necessary for this problem set. Try not to download multiple copies of the problem set, as I can guarantee this will confuse you and cause problems.
 
 **Honor pledge**: And, as always, in every program, the first four lines (comments) should be your honor pledge.
 
@@ -152,7 +152,7 @@ Don't forget to add your new button to the dictionary `effects`.
 
 
 ## Step 7 Write a `pixelate()` function.
-To pixellate an image, divide the image into small squares, e.g., 5 pixels by 5 pixels. Within each 5x5 square, set every R component to the average of all the R components in that square; set every G component to the average of all the G components in the square; set every B component to the average of all the B components in that square.
+When you finish the other functions, pleae give this a try! Those of you who normally finish your problem sets early without any help should find this challenging but doable. To pixellate an image, divide the image into small squares of 5 pixels by 5 pixels. Within each 5x5 square, set every R component to the average of all the R components of all the pixels in that square; set every G component to the average of all the G components in the square; set every B component to the average of all the B components in that square.
 
 ---
 ## Trying other images
@@ -163,7 +163,5 @@ You've probably noticed that the images are in a weird format: `.ppm`. There are
 
 ## What to turn in
 For this problem set, you downloaded this directory from GitHub, and you modified the `ps7.py` program I provided. Now just zip the folder back up and submit it to Canvas.
-
-**Don't forget your comments!**
 
 ### This problem set is due Monday, October 31, 2022 at 11:59pm EDT
