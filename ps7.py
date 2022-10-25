@@ -111,12 +111,12 @@ def flip_horizontal(im):
 # ~~~~~~~~~~~~~~~~~~~
 
 # In each pixel, replace each individual r, g, or b value with the
-# average of all three values for that pixel.
+# INTEGER average of all three values for that pixel.
 
 # Use the colorswitch() function as a guide. In other words, you can
 # basically copy and paste the colorswitch() function here, and then
 # just update the last three lines of code (not comments) to set each
-# component of each pixel to the average of r, g, and b for that pixel.
+# component of each pixel to the INTEGER average of r, g, and b for that pixel.
 
 def greyscale(im):
 
@@ -169,9 +169,17 @@ def upsidedown(im):
 # PIXELATE FUNCTION
 # ~~~~~~~~~~~~~~~~~~~
 
-# This is *optional*. No extra credit will be given. It's just here for fun.
-# See the problem set for details.
+# To pixellate an image, divide the image into small squares,
+# e.g., 5 pixels by 5 pixels. Within each 5x5 square,
+# set every R component to the average of all the R components in that square;
+# set every G component to the average of all the G components in the square;
+# set every B component to the average of all the B components in that square.
 
+def upsidedown(im):
+
+    ## INSERT YOUR CODE HERE
+
+    return im
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~
