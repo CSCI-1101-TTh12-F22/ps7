@@ -175,7 +175,7 @@ def upsidedown(im):
 # set every G component to the average of all the G components in the square;
 # set every B component to the average of all the B components in that square.
 
-def upsidedown(im):
+def pixelate(im):
 
     ## INSERT YOUR CODE HERE
 
